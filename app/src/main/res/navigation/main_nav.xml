@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/AuthFragment">
+
+    <fragment
+        android:id="@+id/AuthFragment"
+        android:name="com.harish.recipeandroid.ui.fragments.authentication.AuthFragment"
+        android:label="LandingFragment">
+
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.harish.recipeandroid.ui.fragments.HomeFragment"
+        android:label="HomeFragment" />
+</navigation>

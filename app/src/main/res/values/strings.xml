@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">RecipeAndroid</string>
+    <string name="preference_file_key">RecipeApp</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="log_in_to_recipeapp">Log in to RecipeApp!</string>
+    <string name="log_in_to_use_all_the_features_of_recipeapp_nregister_if_you_dont_have_an_account">Log in to use all the features of RecipeApp!\nRegister if you dont have an Account!</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="skip">Skip</string>
+    <string name="submit">Submit</string>
 </resources>
