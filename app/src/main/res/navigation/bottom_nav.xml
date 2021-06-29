@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_nav.xml"
+    app:startDestination="@id/navHome">
+    <fragment
+        android:id="@+id/navHome"
+        android:name="com.harish.recipeandroid.ui.fragments.home.HomeNavFragment"
+        android:label="LandingFragment" />
+
+    <fragment
+        android:id="@+id/navSearch"
+        android:name="com.harish.recipeandroid.ui.fragments.home.SearchNavFragment"
+        android:label="LandingFragment" />
+    <fragment
+        android:id="@+id/navAddRecipe"
+        android:name="com.harish.recipeandroid.ui.fragments.home.AddRecipeNavFragment"
+        android:label="LandingFragment" />
+    <fragment
+        android:id="@+id/navFavorite"
+        android:name="com.harish.recipeandroid.ui.fragments.home.FavoriteNavFragment"
+        android:label="LandingFragment" />
+    <fragment
+        android:id="@+id/navProfile"
+        android:name="com.harish.recipeandroid.ui.fragments.home.ProfileNavFragment"
+        android:label="LandingFragment" />
+
+</navigation>

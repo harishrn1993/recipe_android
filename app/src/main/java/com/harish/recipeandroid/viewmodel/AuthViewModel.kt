@@ -5,11 +5,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.gson.Gson
 import com.harish.recipeandroid.R
+import com.harish.recipeandroid.data.model.auth.AuthResponseModel
 import com.harish.recipeandroid.datastore.PreferenceDataStore
 import com.harish.recipeandroid.datastore.UiData
-import com.harish.recipeandroid.model.AuthResponseModel
 import com.harish.recipeandroid.repository.auth.IAuthRepository
-import com.harish.recipeandroid.repository.auth.VolleyAuthRepository
 import com.harish.recipeandroid.ui.fragments.authentication.AuthFragment.STATE
 import kotlinx.coroutines.launch
 
@@ -22,7 +21,7 @@ class AuthViewModel : ViewModel() {
     var username: String? = ""
     var email: String? = ""
     var viewState: MutableLiveData<STATE> = MutableLiveData(STATE.REGISTER)
-    private val authRepo: IAuthRepository = VolleyAuthRepository()
+    private val authRepo: IAuthRepository = IAuthRepository.instance
 
     fun signIn(email: String, password: String) {
         isLoading.value = true

@@ -1,4 +1,4 @@
-package com.harish.recipeandroid.model
+package com.harish.recipeandroid.data.model
 
 data class User(
     val _id: String,

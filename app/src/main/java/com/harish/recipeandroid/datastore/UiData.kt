@@ -1,6 +1,6 @@
 package com.harish.recipeandroid.datastore
 
-import com.harish.recipeandroid.model.User
+import com.harish.recipeandroid.data.model.User
 
 object UiData {
     var user: User? = null

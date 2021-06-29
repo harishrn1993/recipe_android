@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/breakFastLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp">
+
+            <TextView
+                android:id="@+id/breakFastTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="@string/breakfast"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/goToBreakfastSearch"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignEnd="@id/breakFastTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:padding="8dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/breakFastRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/breakFastTextView"
+                android:layout_marginTop="8dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lunchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/breakFastLayout"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/lunchTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="@string/lunch"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/goToLunchSearch"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignEnd="@id/lunchTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:padding="8dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lunchRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lunchTextView"
+                android:layout_marginTop="8dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dinnerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lunchLayout"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/dinnerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="@string/dinner"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/goToDinnerSearch"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignEnd="@id/dinnerTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:padding="8dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dinnerRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dinnerTextView"
+                android:layout_marginTop="8dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/snackLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dinnerLayout"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/snackTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="@string/snacks"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/goToSnackSearch"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignEnd="@id/snackTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:padding="8dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/snackRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/snackTextView"
+                android:layout_marginTop="8dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -12,4 +12,15 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="skip">Skip</string>
     <string name="submit">Submit</string>
+    <string name="text_home">home</string>
+    <string name="text_search">Search</string>
+    <string name="image_des">Image not loaded</string>
+    <string name="profile_nav">Profile Nav</string>
+    <string name="search_nav">Search Nav</string>
+    <string name="recipe_nav">Recipe Nav</string>
+    <string name="favorite_nav">Favorite Nav</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="snacks">Snacks</string>
 </resources>

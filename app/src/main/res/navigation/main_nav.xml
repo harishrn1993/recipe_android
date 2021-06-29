@@ -16,6 +16,6 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.harish.recipeandroid.ui.fragments.HomeFragment"
+        android:name="com.harish.recipeandroid.ui.fragments.home.HomeFragment"
         android:label="HomeFragment" />
 </navigation>

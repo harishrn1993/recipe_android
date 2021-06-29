@@ -3,6 +3,10 @@ package com.harish.recipeandroid.repository.auth
 import androidx.lifecycle.MutableLiveData
 
 interface IAuthRepository {
+    companion object {
+        val instance: IAuthRepository = VolleyAuthRepository()
+    }
+
     suspend fun signIn(email: String, password: String): MutableLiveData<Pair<String?, String?>>
     suspend fun signUp(
         email: String,
